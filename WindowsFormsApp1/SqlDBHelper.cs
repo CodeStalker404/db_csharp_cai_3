@@ -95,7 +95,7 @@ namespace WindowsFormsApp1
             dRegistro[4] = juegoDeMesa.Tiempo;
 
             // Si quisieramos hacerlo por nombre de columna en vez de posición
-            // dRegistro["DNI"] = juegoDeMesa.Dni;
+            // dRegistro["ID"] = juegoDeMesa.ID;
 
             // Añadimos el registro al Dataset
             dsJuegosDeMesa.Tables["JuegosDeMesa"].Rows.Add(dRegistro);
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
             dRegistro[4] = juegoDeMesa.Tiempo;
 
             // Si quisieramos hacerlo por nombre de columna en vez de posición
-            // dRegistro["DNI"] = juegoDeMesa.Dni;
+            // dRegistro["ID"] = juegoDeMesa.ID;
 
             // Reconectamos con el dataAdapter y actualizamos la BD
             SqlCommandBuilder cb = new SqlCommandBuilder(daJuegosDeMesa);

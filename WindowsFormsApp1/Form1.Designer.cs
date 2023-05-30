@@ -63,7 +63,7 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 22);
             this.txtID.TabIndex = 0;
-            this.txtID.TextChanged += new System.EventHandler(this.txtDni_TextChanged);
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
             // txtNombre
             // 
@@ -81,7 +81,7 @@
             this.txtMaxJugadores.Name = "txtMaxJugadores";
             this.txtMaxJugadores.Size = new System.Drawing.Size(100, 22);
             this.txtMaxJugadores.TabIndex = 2;
-            this.txtMaxJugadores.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.txtMaxJugadores.TextChanged += new System.EventHandler(this.txtMaxJugadores_TextChanged);
             // 
             // txtMinJugadores
             // 
@@ -90,7 +90,7 @@
             this.txtMinJugadores.Name = "txtMinJugadores";
             this.txtMinJugadores.Size = new System.Drawing.Size(100, 22);
             this.txtMinJugadores.TabIndex = 3;
-            this.txtMinJugadores.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
+            this.txtMinJugadores.TextChanged += new System.EventHandler(this.txtMinJugadores_TextChanged);
             // 
             // txtTiempo
             // 
@@ -99,7 +99,7 @@
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(100, 22);
             this.txtTiempo.TabIndex = 4;
-            this.txtTiempo.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            this.txtTiempo.TextChanged += new System.EventHandler(this.txtTiempo_TextChanged);
             // 
             // ID
             // 

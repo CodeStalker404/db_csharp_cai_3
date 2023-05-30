@@ -164,19 +164,6 @@ namespace WindowsFormsApp1
             }
         }
 
-
-        ////private bool EsDniValido(string dni)
-        ////{
-        ////    bool esDniValido = false;
-
-        ////    if(dni.Length == 9)
-        ////    {
-        ////        char ultimoCaracter = dni.ElementAt(dni.Length - 1);
-        ////        esDniValido = Char.IsLetter(ultimoCaracter);
-        ////    }
-        ////    return esDniValido;
-        ////}
-
         private bool SonTodoLetras(string input)
         {
             if (string.IsNullOrEmpty(input))
@@ -287,7 +274,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(
                     "Hay campos con datos no válidos." +
-                    "\nO el DNI ya figura en la base de datos." +
+                    "\nO el ID ya figura en la base de datos." +
                     "\nRevise los datos introducidos."
                 );
             }
@@ -325,13 +312,13 @@ namespace WindowsFormsApp1
             }
         }
 
-        //TODO revisar textos y nombres elementos
-        private void txtDni_TextChanged(object sender, EventArgs e)
+
+        private void txtID_TextChanged(object sender, EventArgs e)
         {
-            TextBox txtDni = sender as TextBox;
-            if (!SonTodoNumeros(txtDni.Text))
+            TextBox txtID = sender as TextBox;
+            if (!SonTodoNumeros(txtID.Text))
             {
-                this.lblValidacionID.Text = "DNI inválido. Introduzca un DNI válido.";
+                this.lblValidacionID.Text = "ID inválido. El ID solo debe contener números.";
                 this.lblValidacionID.Visible = true;
             }
             else
@@ -343,7 +330,6 @@ namespace WindowsFormsApp1
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
             TextBox txtNombre = sender as TextBox;
-            Console.WriteLine(txtNombre.Text);
             if (!SonTodoLetras(txtNombre.Text))
             {
                 this.lblValidacionNombre.Text = "Nombre inválido.\nSolo puede contener letras y espacios.";
@@ -355,12 +341,12 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void txtApellidos_TextChanged(object sender, EventArgs e)
+        private void txtMinJugadores_TextChanged(object sender, EventArgs e)
         {
-            TextBox txtApellidos = sender as TextBox;
-            if (!SonTodoNumeros(txtApellidos.Text))
+            TextBox txtMinJugadores = sender as TextBox;
+            if (!SonTodoNumeros(txtMinJugadores.Text))
             {
-                this.lblValidacionMinJugadores.Text = "Apellidos inválidos.\nSolo puede contener letras y espacios.";
+                this.lblValidacionMinJugadores.Text = "Mínimo de jugadores inválido.\nSolo puede contener números.";
                 this.lblValidacionMinJugadores.Visible = true;
             }
             else
@@ -369,12 +355,12 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        private void txtMaxJugadores_TextChanged(object sender, EventArgs e)
         {
-            TextBox txtTelefono = sender as TextBox;
-            if (!SonTodoNumeros(txtTelefono.Text))
+            TextBox txtMaxJugadores = sender as TextBox;
+            if (!SonTodoNumeros(txtMaxJugadores.Text))
             {
-                this.lblValidacionMaxJugadores.Text = "Teléfono inválido.\nSolo puede contener números.";
+                this.lblValidacionMaxJugadores.Text = "Máximo de jugadores inválido.\nSolo puede contener números.";
                 this.lblValidacionMaxJugadores.Visible = true;
             }
             else
@@ -383,12 +369,12 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void txtTiempo_TextChanged(object sender, EventArgs e)
         {
-            TextBox txtEmail = sender as TextBox;
-            if (!SonTodoNumeros(txtEmail.Text))
+            TextBox txtTiempo = sender as TextBox;
+            if (!SonTodoNumeros(txtTiempo.Text))
             {
-                this.lblValidacionTiempo.Text = "Email inválido.\nDebe contener una \'@\' y un punto.";
+                this.lblValidacionTiempo.Text = "Tiempo inválido.\nSolo puede contener números.";
                 this.lblValidacionTiempo.Visible = true;
             }
             else
